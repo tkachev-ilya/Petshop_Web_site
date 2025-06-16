@@ -1,0 +1,94 @@
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .order-card { 
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px;
+            background: white;
+        }
+        .order-header { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .order-id { 
+            font-weight: bold; 
+            font-size: 1.4em; 
+            color: #333;
+        }
+        .order-date { 
+            color: #666; 
+            font-size: 0.9em;
+        }
+        .order-total { 
+            font-weight: bold; 
+            margin-top: 15px; 
+            font-size: 1.2em;
+            text-align: right;
+            color: #28a745;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #0069d9;
+        }
+        .order-detail {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .order-detail strong {
+            display: inline-block;
+            width: 120px;
+            color: #555;
+        }
+        .order-items {
+            margin-top: 20px;
+        }
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        auth-required {
+            text-align: center;
+            padding: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .auth-required h2 {
+            margin-bottom: 20px;
+        }
+        .auth-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }

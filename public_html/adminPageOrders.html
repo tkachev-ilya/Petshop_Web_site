@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ-панель :: Управление заказами</title>
+    <link rel="stylesheet" href="css/admin_orders_page.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Панель администратора PetShop :: Заказы</h1>
+        <nav class="admin-nav">
+            <a href="adminPage.html">Товары</a>
+            <a href="admin_coupons.html">Скидки</a>
+            <a href="index.html">В магазин</a>
+        </nav>
+    </header>
+    
+    <div class="admin-container">
+        <div class="filters">
+            <div class="filter-group">
+                <label>🔍 Поиск</label>
+                <input type="text" id="search-input" placeholder="ID, имя, телефон...">
+            </div>
+            
+            <div class="filter-group">
+                <label>📅 Период</label>
+                <select id="period-filter">
+                    <option value="all">За все время</option>
+                    <option value="today">Сегодня</option>
+                    <option value="week">За неделю</option>
+                    <option value="month">За месяц</option>
+                    <option value="quarter">За квартал</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>🔄 Сортировка</label>
+                <select id="sort-filter">
+                    <option value="newest">Сначала новые</option>
+                    <option value="oldest">Сначала старые</option>
+                    <option value="price_high">Сумма по убыванию</option>
+                    <option value="price_low">Сумма по возрастанию</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <button class="btn" id="apply-filters">Применить фильтры</button>
+                <button class="btn secondary" id="reset-filters">Сбросить фильтры</button>
+            </div>
+        </div>
+        
+        <div class="orders-list">
+            <div class="orders-list-header">
+                <div>ID</div>
+                <div>Дата</div>
+                <div>Покупатель</div>
+                <div>Адрес</div>
+                <div>Телефон</div>
+                <div>Сумма</div>
+                <div>Действия</div>
+            </div>
+            
+            <div id="orders-list-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    Загрузка данных о заказах...
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+        </div>
+    </div>
+
+    <script src="js/adminPageOrders.js"></script>
+</body>
+</html>

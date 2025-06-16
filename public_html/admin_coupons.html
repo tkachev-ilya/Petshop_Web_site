@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление купонами</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/admin_coupons.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🐾 PetShop Admin</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">В магазин</a></li>
+                    <li><a href="adminPage.html">Товары</a></li>
+                    <li><button id="logout-btn">Выйти</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <h1 class="admin-title">Управление купонами</h1>
+        
+        <div id="alert-container"></div>
+        
+        <section class="coupon-form">
+            <h2>Добавить новый купон</h2>
+            <form id="add-coupon-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="coupon-code">Код купона:</label>
+                        <input type="text" id="coupon-code" name="code" required 
+                               placeholder="SUMMER2023" autocomplete="off">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="coupon-discount">Скидка (%):</label>
+                        <input type="number" id="coupon-discount" name="discount" 
+                               required min="1" max="100" placeholder="10" autocomplete="off">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="coupon-expiry">Срок действия:</label>
+                        <input type="date" id="coupon-expiry" name="expiry_date" required>
+                    </div>
+                    
+                    <div class="form-group" style="align-self: flex-end;">
+                        <button type="submit" class="btn">➕ Добавить купон</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Список купонов</h2>
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <div>Загрузка купонов...</div>
+            </div>
+            <table class="coupons-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Код</th>
+                        <th>Скидка</th>
+                        <th>Срок действия</th>
+                        <th>Действия</th>
+                    </tr>
+                </thead>
+                <tbody id="coupons-list">
+                    <!-- Купоны будут загружены сюда -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script type="module" src="js/admin_coupons.js"></script>
+</body>
+</html>

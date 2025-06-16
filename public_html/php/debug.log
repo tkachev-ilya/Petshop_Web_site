@@ -1,0 +1,278 @@
+Array
+(
+    [id] => 2
+    [name] => svb
+    [price] => 300
+    [category] => dogs
+    [description] => asdv
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description
+            WHERE id = :id
+Params: Array
+(
+    [:name] => svb
+    [:price] => 300
+    [:category] => dogs
+    [:description] => asdv
+    [:id] => 2
+    [:image] => null
+)
+Array
+(
+    [id] => 2
+    [name] => svb
+    [price] => 300
+    [category] => dogs
+    [description] => asdv
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => bober_kurwa.webp
+            [full_path] => bober_kurwa.webp
+            [type] => image/webp
+            [tmp_name] => /tmp/phpGeXbcR
+            [error] => 0
+            [size] => 34910
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description,
+            image = :image
+            WHERE id = :id
+Params: Array
+(
+    [:name] => svb
+    [:price] => 300
+    [:category] => dogs
+    [:description] => asdv
+    [:id] => 2
+    [:image] => /uploads/product_684e97abe26e1.webp
+)
+Array
+(
+    [id] => 2
+    [name] => svb
+    [price] => 500
+    [category] => dogs
+    [description] => asdv
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => bober_kurwa.webp
+            [full_path] => bober_kurwa.webp
+            [type] => image/webp
+            [tmp_name] => /tmp/phpSQZelo
+            [error] => 0
+            [size] => 34910
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description,
+            image = :image
+            WHERE id = :id
+Params: Array
+(
+    [:name] => svb
+    [:price] => 500
+    [:category] => dogs
+    [:description] => asdv
+    [:id] => 2
+    [:image] => /uploads/product_684e989ad088c.webp
+)
+Array
+(
+    [id] => 2
+    [name] => svb
+    [price] => 600
+    [category] => dogs
+    [description] => asdv
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => bober_kurwa.webp
+            [full_path] => bober_kurwa.webp
+            [type] => image/webp
+            [tmp_name] => /tmp/phpfDt0x4
+            [error] => 0
+            [size] => 34910
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description,
+            image = :image
+            WHERE id = :id
+Params: Array
+(
+    [:name] => svb
+    [:price] => 600
+    [:category] => dogs
+    [:description] => asdv
+    [:id] => 2
+    [:image] => /uploads/product_684e98c9a016b.webp
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+    [id] => 2
+    [is_visible] => 0
+)
+Удалено из корзин: 1 записей
+Array
+(
+    [id] => 2
+    [is_visible] => 1
+)
+Array
+(
+    [id] => 2
+    [name] => Игрушка бобёр
+    [price] => 600.00
+    [category] => dogs
+    [description] => Игрушка бобёр для собак
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description
+            WHERE id = :id
+Params: Array
+(
+    [:name] => Игрушка бобёр
+    [:price] => 600
+    [:category] => dogs
+    [:description] => Игрушка бобёр для собак
+    [:id] => 2
+    [:image] => null
+)
+Array
+(
+    [id] => 11
+    [is_visible] => 1
+)
+Array
+(
+    [id] => 11
+    [is_visible] => 0
+)
+Удалено из корзин: 0 записей
+Array
+(
+    [id] => 2
+    [name] => Игрушка бобёр
+    [price] => 600.00
+    [category] => dogs
+    [description] => Игрушка бобёр для собак
+    [stock] => 5
+)
+Array
+(
+    [image] => Array
+        (
+            [name] => 
+            [full_path] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+SQL: UPDATE products SET 
+            product_name = :name,
+            product_price = :price,
+            product_category = :category,
+            product_description = :description,
+            stock = :stock
+            WHERE id = :id
+Params: Array
+(
+    [:name] => Игрушка бобёр
+    [:price] => 600
+    [:category] => dogs
+    [:description] => Игрушка бобёр для собак
+    [:stock] => 5
+    [:id] => 2
+    [:image] => null
+)
+Array
+(
+    [id] => 6
+    [is_visible] => 0
+)
+Удалено из корзин: 0 записей
+Array
+(
+    [id] => 2
+    [is_visible] => 0
+)
+Удалено из корзин: 0 записей
+Array
+(
+    [id] => 2
+    [is_visible] => 1
+)
+Array
+(
+    [id] => 6
+    [is_visible] => 1
+)

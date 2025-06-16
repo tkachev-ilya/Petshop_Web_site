@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🐾 PetShop Admin</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">В магазин</a></li>
+                    <li><a href="adminPageOrders.html">Заказы</a></li>
+                    <li><button id="logout-btn">Выйти</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <h1 class="admin-title">Панель управления</h1>
+        
+        
+        <section class="add-product-section">
+            <h2 id="form-title">➕ Добавить новый товар</h2>
+            <form id="add-product-form" enctype="multipart/form-data">
+                <input type="hidden" id="edit-product-id" name="id" value="" autocomplete="off">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product-name">Название товара:</label>
+                        <input type="text" id="product-name" name="name" required placeholder="Введите название" autocomplete="off">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-price">Цена (₽):</label>
+                        <input type="number" id="product-price" name="price" required placeholder="0" min="0" step="100" autocomplete="transaction-amount">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product-category">Категория:</label>
+                        <select id="product-category" name="category" required autocomplete="off">
+                            <option value="">Выберите категорию</option>
+                            <option value="dogs">🐕 Для собак</option>
+                            <option value="cats">🐱 Для кошек</option>
+                            <option value="other">🐾 Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product-image">Изображение:</label>
+                        <input type="file" id="product-image" name="image" accept="image/*" autocomplete="off">
+                        <img id="image-preview" class="image-preview" alt="Предпросмотр">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-description">Описание товара:</label>
+                    <textarea id="product-description" name="description" rows="4" required placeholder="Подробное описание товара..." autocomplete="off"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product-stock">Количество на складе:</label>
+                        <input type="number" id="product-stock" name="stock" required placeholder="0" min="0" step="1" autocomplete="off">
+                    </div>
+                </div>
+                                
+                <button type="submit" class="btn" id="submit-btn">🚀 Добавить товар</button>
+                <button type="button" class="btn" id="cancel-edit" style="display: none; margin-left: 10px; background: #6c757d;">❌ Отменить</button>
+            </form>
+        </section>
+        <section class="admin-products-section">
+            <h2>Список товаров</h2>
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <div>Загрузка...</div>
+            </div>
+            <div id="admin-products" class="products-grid"></div>
+        </section>
+    </div>
+    
+    <script>
+        // Блокировка изменения ширины контейнера
+        document.addEventListener('DOMContentLoaded', function() {
+            const adminContainer = document.querySelector('.admin-container');
+            if (adminContainer) {
+                // Устанавливаем правильные стили
+                adminContainer.style.maxWidth = '1400px';
+                adminContainer.style.width = '100%';
+                
+                // Блокируем изменение стилей
+                Object.defineProperty(adminContainer.style, 'maxWidth', {
+                    value: '1400px',
+                    writable: false,
+                    configurable: false
+                });
+            }
+        });
+    </script>
+    <script src="js/admin.js" type="module"></script>
+</body>
+</html>

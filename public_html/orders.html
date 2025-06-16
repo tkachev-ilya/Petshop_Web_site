@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>История заказов</title>
+    <link rel="stylesheet" href="css/orders.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1>История ваших заказов</h1>
+                <a href="index.html" class="btn">Вернуться в магазин</a>
+            </div>
+        </header>
+        
+        <div id="auth-required" class="auth-required" style="display: none;">
+            <h2>Для просмотра истории заказов необходимо войти</h2>
+            <p>Пожалуйста, авторизуйтесь или зарегистрируйтесь, чтобы увидеть ваши заказы.</p>
+            <div class="auth-actions">
+                <button class="btn" onclick="window.location.href='index.html#auth'">Войти</button>
+                <button class="btn" onclick="window.location.href='index.html#auth'">Регистрация</button>
+            </div>
+        </div>
+        
+        <div id="order-content" style="display: none;">
+            <div id="order-details"></div>
+            <div id="orders-list" class="order-container"></div>
+        </div>
+    </div>
+    <script type="module" src="js/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+2025-06-16 08:05:40 - Запрос получен
+POST данные: Array
+(
+    [id] => 
+    [name] => sgdsgad
+    [price] => 300
+    [category] => other
+    [description] => sadsagdgbs
+    [stock] => 12
+)
+
+FILES данные: Array
+(
+    [image] => Array
+        (
+            [name] => 1015371371-251469791.jpg
+            [full_path] => 1015371371-251469791.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpsAeGmJ
+            [error] => 0
+            [size] => 266167
+        )
+
+)
+
+Начало обработки изображения
+Изображение сохранено: /uploads/product_684fa624281d8.jpg
+Параметры запроса: Array
+(
+    [:name] => sgdsgad
+    [:price] => 300
+    [:description] => sadsagdgbs
+    [:category] => other
+    [:image_path] => /uploads/product_684fa624281d8.jpg
+    [:stock] => 12
+)
+
+Товар успешно добавлен, ID: 15
